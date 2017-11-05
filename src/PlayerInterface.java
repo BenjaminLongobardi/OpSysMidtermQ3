@@ -7,4 +7,5 @@ import java.rmi.RemoteException;
  */
 public interface PlayerInterface extends Remote{
     public int shoot() throws RemoteException;
+    public void sendResult(int n1, int n2) throws RemoteException;
 }

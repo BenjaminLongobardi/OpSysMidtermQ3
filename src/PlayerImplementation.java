@@ -32,6 +32,17 @@ public class PlayerImplementation extends UnicastRemoteObject implements PlayerI
         catch(Exception e){System.out.println(e); return -1;}
 
     }
+    public void sendResult(int p1Score, int p2Score){
+        if(p1Score>p2Score){
+            System.out.println("You Won!");
+        }
+        else if(p2Score>p1Score){
+            System.out.println("You Lost!");
+        }
+        else{
+            System.out.println("There was a tie");
+        }
+    }
 
 
 }

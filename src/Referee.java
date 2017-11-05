@@ -38,6 +38,10 @@ public class Referee {
             else{
                 System.out.println("The tournament is a draw");
             }
+
+            stub.sendResult(p1counter, p2counter);
+            stub1.sendResult(p2counter, p1counter);
+
         }catch (Exception e){System.out.println(e);}
     }
 }
